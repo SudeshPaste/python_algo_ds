@@ -1,0 +1,1 @@
+lst = ['abc',1,'sudesh','sallp',]
