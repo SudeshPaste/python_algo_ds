@@ -113,9 +113,115 @@ print(list13)
 list13.append("sudesh")
 print(list13)
 
-list13 = []
+list14 = []
 for i in range(101):
     if i % 10 == 0:
-        list13.append(i)
-print(list13)
+        list14.append(i)
+print(list14)
 
+# insert() - add elememt to list at specified index
+
+list15 = [1,2,3,4,5]
+list15.insert(1,'sudesh')
+print(list15)
+
+
+# extend() - To add all items of one list to another list
+list16 = [1,2,3,4,5]
+list17 = ['a','b','c','d','e']
+list16.extend(list17)
+print(list16)
+
+# remove() - this will remove specific item from list
+list18 = ['a','b','c','d','e']
+list18.remove('c')
+print(list18)
+
+# pop() - this will remove last item of list
+list19 = ['a','b','c','d','e']
+list19.pop()
+print(list19)
+
+# this will remove specified element at index position
+list19 = ['a','b','c','d','e']
+list19.pop(2)
+print(list19)
+
+"""
+3. Ordering elements of List:
+"""
+
+# reverse() - reverse the element
+list20 = [11,12,13,14,15]
+list20.reverse()
+print(list20)
+
+# sort() - sort the element
+list20 = [11,12,13,14,15]
+list20.sort()
+print(list20)
+
+
+"""
+Aliasing and Cloning of List objects:
+"""
+
+# = operator meant for aliasing
+# copy() function meant for cloning
+
+list21=[10,20,30,40] 
+list22=list21 
+list22[1]=777 
+print(list21)
+print(list22)
+
+list23=[10,20,30,40] 
+list24 = list23.copy() 
+list24[1]=777 
+print(list23)
+print(list24)
+
+
+"""
+Using Mathematical operators for List Objects ( + and *)
+"""
+
+# 1. Concatenation operator(+):
+
+list25=[10,20,30,40] 
+list26=[10,20,30,40]
+list27 = list25 + list26
+print(list27)
+
+# 2. Repetition Operator(*):
+
+list28=[10,20,30,40] 
+list29 = list28 * 4
+print(list29)
+
+"""
+Membership operators: (in and not in)
+"""
+
+list30 = [10,20,30,40,50]
+print(30 in list30) 
+print(20 not in list30) 
+
+
+"""
+Nested Lists:
+"""
+
+list31 = [1,2,3,4,5,['a','b','c','d']]
+print(list31[5][2])
+
+"""
+List Comprehensions:
+"""
+
+# Syntax: list=[expression for item in list if condition]
+
+list32 = [a for a in range(1,6)]
+print(list32)
+list33 = [2**a for a in range(11) ]
+print(list33)
